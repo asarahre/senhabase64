@@ -2,12 +2,12 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
   <a href="{{home}}" class="brand-link">
-    <img
+    <!-- <img
       src="{{empresa.icone}}"
       alt="AdminLTE Logo"
       class="brand-image img-circle elevation-3"
       style="opacity: 0.8"
-    />
+    /> -->
     <span class="brand-text font-weight-light">
       {% if empresa.nome_fantasia is defined %} {{ 'Empresa' }} {% else %} {{
       empresa.nome_fantasia }} {% endif %}
@@ -16,7 +16,8 @@
   <!-- Sidebar -->
   <div class="sidebar">
     <!-- Sidebar user panel (optional) -->
-    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    '
+    <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
         <img
           src="{{usuario.foto_perfil}}"
@@ -29,7 +30,7 @@
           >{{usuario.nome_usuario }}</a
         >
       </div>
-    </div>
+    </div>' -->
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul
@@ -67,7 +68,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{home}}/listacliente" class="nav-link">
+              <a href="{{home}}/listausuario" class="nav-link">
                 <i class="fa-solid fa-user"> </i>
                 <p>Usuários</p>
               </a>
