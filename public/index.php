@@ -1,24 +1,8 @@
 <?php
 
-
 use Slim\Factory\AppFactory;
 
-use app\database\models\Posts;
-
 require "../vendor/autoload.php";
-
-// $posts = new Posts();
-// $fieldAndValues = [
-//     "fields" => [
-//         "titulo" => "teste",
-//         "post" => "teste2"
-//     ],
-//     "where" => [
-//         "id" => "1"
-//     ]
-// ];
-
-// $posts->update($fieldAndValues);
 
 $app = AppFactory::create();
 $app->addRoutingMiddleware();
