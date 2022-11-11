@@ -45,33 +45,32 @@
                                         <tr>
                                             <th>Código</th>
                                             <th>Nome</th>
-                                            <th>Sobre nome</th>
-                                            <th>Valor venda</th>
+                                            <th>Sobrenome</th>
                                             <th>Cpf</th>
-                                            <th>Ação</th>
+                                            <!-- <th>Ação</th> -->
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <!--Items array    Array-->
-                                        {% for clientes in cliente %}
+                                        {% for item in clientes %}
                                         <tr id="tr{{clientes.id}}">
-                                            <td>{{clientes.id}}</td>
-                                            <td>{{clientes.nome}}</td>
-                                            <td>{{clientes.sobre_nome}}</td>
-                                            <td>{{clientes.cpf}}</td>
-                                            <td>
+                                            <td>{{item.id}}</td>
+                                            <td>{{item.nome}}</td>
+                                            <td>{{item.sobrenome}}</td>
+                                            <td>{{item.cpf}}</td>
+                                            <!-- <td>
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <a href="{{ (cadastro ~ '?id=' ~ clientes.id) }}"
+                                                    <a href="{{ (cadastro ~ '?id=' ~ item.id) }}"
                                                         class="btn btn-sm btn-warning">
                                                         <i class="fas fa-edit"></i>
                                                         Editar
                                                     </a>
                                                     <button type="button" class="btn btn-sm btn-danger"
-                                                        onclick="ShowModal('{{clientes.id}}');">
+                                                        onclick="ShowModal('{{item.id}}');">
                                                         <i class="fas fa-trash"></i>
                                                         Excluir
                                                     </button>
-                                                </div>
+                                                </div> -->
                                             </td>
                                         </tr>
                                         {% endfor %}

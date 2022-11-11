@@ -21,8 +21,7 @@ class ControllerCliente extends Base
             [
                 "clientes" => $clientes,
                 "lista" => HOME,
-                // "base_url" => BASE_URL,
-                "base_url" => HOME,
+                "base_url" => BASE_URL,
                 "descricao_label" => "Listagem de clientes"
             ]
         );
